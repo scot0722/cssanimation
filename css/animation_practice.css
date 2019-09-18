@@ -1,0 +1,132 @@
+/* this is where all of your CSS styles go */
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+html{
+	background: url("../images/wave.jpg") no-repeat center fixed;
+	background-size: cover;
+
+}
+
+.grid_container {
+	width: 400px;
+	height: 200px;
+	position: relative;
+	left: 48%;
+	top: 52%;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	float: left;
+	margin-left: 5px;
+
+}
+
+.f {
+	position: relative;
+	animation: f_move 2s;
+	animation-fill-mode: forwards;
+	color: white;
+}
+
+.l {
+	position: relative;
+	animation: l_move 2s;
+	animation-delay: .25s;
+	animation-fill-mode: forwards;
+	color: white;
+}
+
+.o {
+	position: relative;
+	animation: o_move 2s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+	color: white;
+}
+
+.a {
+	position: relative;
+	animation: a_fade 2s;
+	animation-delay: .75s;
+	animation-fill-mode: forwards;
+	z-index: -1;
+	color: white;
+}
+
+.t {
+	position: relative;
+	animation: t_fade 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	z-index: -1;
+	color: white;
+}
+
+.o_2 {
+	position: absolute;
+	animation: o_fadein 2s;
+	animation-delay: .75s;
+	left: 2.07em;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	color: white;
+}
+
+.d {
+	position: absolute;
+	animation: d_fadein 2s;
+	animation-delay: 1s;
+	left: 2.85em;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	color: white;
+	
+}
+
+/* Animation Keyframes */
+
+@keyframes f_move {
+	0%,100% {top: 0px;}
+	50% {top: -150px;}
+}
+
+@keyframes l_move {
+	0%,100% {top: 0px;}
+	50% {top: -150px;}
+}
+
+@keyframes o_move {
+	0%,100% {top: 0px;}
+	50% {top: -150px;}
+}
+
+@keyframes a_fade {
+	0%{top: 0px; opacity: 1;}
+	50% {top: -150px; opacity: 1;}
+	100% {top: 0px; opacity: 0;}
+}
+
+@keyframes t_fade {
+	0% {top: 0px; opacity: 1;}
+	50% {top: -150px; opacity: 1;}
+	100% {top: 0px; opacity: 0;}
+}
+
+@keyframes o_fadein {
+	0%{top: 0px; opacity: 0;}
+	50% {top: 150px; opacity: 0;}
+	100% {top: 0px; opacity: 1;}
+}
+
+@keyframes d_fadein {
+	0% {top: 0px; opacity: 0;}
+	50% {top: 150px; opacity: 0;}
+	100% {top: 0px; opacity: 1;}
+}
